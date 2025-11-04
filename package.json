@@ -56,8 +56,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "prebuild": "chmod +x ./node_modules/.bin/vite || true",
-    "build": "npm run prebuild && vite build",
+    "build": "node node_modules/vite/bin/vite.js build",
     "preview": "vite preview"
   }
 }
